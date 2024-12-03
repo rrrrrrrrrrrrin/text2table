@@ -18,4 +18,4 @@ jobs:
     - name: Test
       run: ./text2table tests/in/test1.txt out.txt && cmp out.txt tests/out/test1.txt
     - name: Code Linting
-      run: clang-tidy text2table.cpp
+      uses: amcp-pit/cpp-linter@vq1
