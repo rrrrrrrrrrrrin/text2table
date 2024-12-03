@@ -17,5 +17,5 @@ jobs:
       run: clang++ text2table.cpp -o text2table
     - name: Test
       run: ./text2table tests/in/test1.txt out.txt && cmp out.txt tests/out/test1.txt
-    - name: Code Litting
+    - name: Code Linting
       run: clang-tidy text2table.cpp
